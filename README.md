@@ -1,6 +1,6 @@
 # Inchworm-inspired Adaptive Multimodal Neural Control (IAMNC) for Autonomous Locomotion and Gait Transition of a Bipedal Out-pipe Inspection Robot
 
-![alt text](pictures/AVIS_DELTA/lnchworm.png)
+![alt text](pictures/lnchworm.png)
 <!-- <img src="pictures/AVIS_DELTA/lnchworm.png" alt="alt text" width="700"/> -->
 
 ## Adstract
@@ -11,7 +11,7 @@ While inspection robots currently achieve autonomous locomotion and transitions 
 **__AVIS-II BIPEDAL OUT-PIPE INSPECTION ROBOT__**
 
 <!-- <img src="pictures/AVIS_DELTA/figure_hardware.jpg" alt="alt text" width="700"/> -->
-![alt text](pictures/AVIS_DELTA/figure_hardware.jpg)
+![alt text](pictures/figure_hardware.jpg)
 
 The AdVance pipe Inspection robot System-II (AVIS-II), it is an upgrade of the previous version <a href="#zavis">[1]</a>. The robot structure is made of aluminum, while the cover are made of PLA plastic. It has six revolute joints, driven by XM540-W270-R Dynamixel servo motors at the joints M1, M2, M4 and XM430-W350-R Dynamixel servo motors at joints M0, M3, M5. It uses two electromagnets (Magma-4230035) installed at its feet to attach metal pipes with two 3D printed ABS foot caps and silicone rings for improved stability and adhesion.
 
@@ -28,7 +28,7 @@ Other nine signals are exteroceptive information, divided into two types. Three 
     <img src="pictures/AVIS_DELTA/video_pic.png" alt="alt text" width="400"/>
   </a>
 </div> -->
-[![alt text](pictures/AVIS_DELTA/video_pic_2.jpg)](https://youtu.be/H5cYFxIEegE)
+[![alt text](pictures/video_pic_2.jpg)](https://youtu.be/H5cYFxIEegE)
 Click the image or Link: https://youtu.be/H5cYFxIEegE
 
 ***
@@ -36,22 +36,22 @@ Click the image or Link: https://youtu.be/H5cYFxIEegE
 ### Table S1: Weight connection between Sensor feedbacks and $IPN$ network
 Connection wight between Sensor feedbacks and IPN network ($W^{\vec{ipn}}_{\vec{fb}}$).
 
-![alt text](pictures/AVIS_DELTA/s1.png)
+![alt text](pictures/s1.png)
 
 ---
 ### Table S2: Weight connection $(W_A)$ between $SISN$ and $IPN$ network.
 - (Table S2.1) Connection wight between $SISN^0$ and $IPN$ network.
 
-![alt text](pictures/AVIS_DELTA/s2-1.png)
+![alt text](pictures/s2-1.png)
 - (Table S2.2) Connection wight between $SISN^1$ and $IPN$ network.
 
-![alt text](pictures/AVIS_DELTA/s2-2.png)
+![alt text](pictures/s2-2.png)
 - (Table S2.3) Connection wight between $SISN^2$ and $IPN$ network.
 
-![alt text](pictures/AVIS_DELTA/s2-3.png)
+![alt text](pictures/s2-3.png)
 - (Table S2.4) Connection wight between $SISN^3$ and $IPN$ network.
 
-![alt text](pictures/AVIS_DELTA/s2-4.png)
+![alt text](pictures/s2-4.png)
 
 Note: no connection means no adaptive action in th sequenctial action.
 
@@ -59,46 +59,46 @@ Note: no connection means no adaptive action in th sequenctial action.
 ### Table 3: Weight connection $(W_B)$ between $SISN^{0-3}$ and $AU^0$ network.
 - (Table S3.1) Connection weight between $SISN^0$ and $AU^0$ network.
 
-![alt text](pictures/AVIS_DELTA/s3-1.png)
+![alt text](pictures/s3-1.png)
 - (Table S3.2) Connection weight between $SISN^1$ and $AU^0$ network.
 
-![alt text](pictures/AVIS_DELTA/s3-2.png)
+![alt text](pictures/s3-2.png)
 - (Table S3.3) Connection weight between $SISN^2$ and $AU^0$ network.
 
-![alt text](pictures/AVIS_DELTA/s3-3.png)
+![alt text](pictures/s3-3.png)
 - (Table S3.4) Connection weight between $SISN^3$ and $AU^0$ network.
 
-![alt text](pictures/AVIS_DELTA/s3-4.png)
+![alt text](pictures/s3-4.png)
 
 ---
 ### Table 4: Summary five different $AU$ modes and functions.
 five different $AU$ modes, presented along with their activation functions, inputs, parameters, functions, and where they are employed in the $AUN$. $x[t]$ denotes the input signal (e.g., from the previous layer), $ir_m$ denotes the $m^\text{th}$ IR distance feedback, and $mn_k[t-1]$ denotes the $k^\text{th}$ target motor position at previous timestep. $rs$ denotes a scaling parameter, $en$ denotes enabling connection weights, and $ae$ denotes the parameter corresponding to an acceptable threshold.
-![alt text](pictures/AVIS_DELTA/s4.png)
+![alt text](pictures/s4.png)
 
 ---
 ### Table 5: Weight connection of Adaptation Unit Network between layer $(AU^{0-4})$
 - (Table S5.1) Connection weight $(W_C)$ between $AU^0$ and $AU^1$ network.
 
-![alt text](pictures/AVIS_DELTA/s5-1.png)
+![alt text](pictures/s5-1.png)
 - (Table S5.2) Connection weight $(W_D)$ between $AU^1$ and $AU^2$ network.
 
-![alt text](pictures/AVIS_DELTA/s5-2.png)
+![alt text](pictures/s5-2.png)
 - (Table S5.3) Connection weight $(W_E)$ between $AU^2$ and $AU^3$ network.
 
-![alt text](pictures/AVIS_DELTA/s5-3.png)
+![alt text](pictures/s5-3.png)
 - (Table S5.4) Connection weight $(W^{rs}_E)$ between $AU^0$ and $AU^3$ network
 
-![alt text](pictures/AVIS_DELTA/s5-4.png)
+![alt text](pictures/s5-4.png)
 - (Table S5.5) Connection weight $(W_F)$ between $AU^3$ and $AU^4$ network.
 
-![alt text](pictures/AVIS_DELTA/s5-5.png)
+![alt text](pictures/s5-5.png)
 
 ***
 ## Comparison of Eight State-Of-The-Art Robots.
 Comparison of eight state-of-the-art robots, including the presented AVIS-II, in terms of their weights, sizes, control approaches, the number of exteroceptive inputs along with their dimensions, and demonstrated transition conditions along with their cost of transport (COT).
 
 <!-- <img src="pictures/AVIS_DELTA/Compar.png" alt="alt text" width="700"/> -->
-![alt text](pictures/AVIS_DELTA/Compar.png)
+![alt text](pictures/Compar.png)
 
 ***
 ## REFERENCES
