@@ -1,4 +1,4 @@
-# Five different function of Adaptive Unit (AU)
+# Five Functional Types of Adaptive Units (AU)
 ![alt text](pictures/figure_adaptationunit.png)
 
 ![alt text](pictures/AU-Forward-Example.png)
