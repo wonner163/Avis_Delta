@@ -5,5 +5,5 @@
 ![alt text](pictures/AU-ExReflex-Example.png)
 ![alt text](pictures/AU-ProReflex-Example.png)
 ![alt text](pictures/AU-Integration-Example.png)
-![alt text](pictures/AU-ExReflex-Example.png)
+![alt text](pictures/AU-Gate-Example.png)
 
