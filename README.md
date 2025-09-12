@@ -56,7 +56,7 @@ Connection wight between Sensor feedbacks and IPN network ($W^{\vec{ipn}}_{\vec{
 Note: no connection means no adaptive action in th sequenctial action.
 
 ---
-### Table 3: Weight connection $(W_B)$ between $SISN^{0-3}$ and $AU^0$ network.
+### Table S3: Weight connection $(W_B)$ between $SISN^{0-3}$ and $AU^0$ network.
 - (Table S3.1) Connection weight between $SISN^0$ and $AU^0$ network.
 
 ![alt text](pictures/s3-1.png)
@@ -71,12 +71,12 @@ Note: no connection means no adaptive action in th sequenctial action.
 ![alt text](pictures/s3-4.png)
 
 ---
-### Table 4: Summary five different $AU$ modes and functions.
+### Table S4: Summary five different $AU$ modes and functions.
 five different $AU$ modes, presented along with their activation functions, inputs, parameters, functions, and where they are employed in the $AUN$. $x[t]$ denotes the input signal (e.g., from the previous layer), $ir_m$ denotes the $m^\text{th}$ IR distance feedback, and $mn_k[t-1]$ denotes the $k^\text{th}$ target motor position at previous timestep. $rs$ denotes a scaling parameter, $en$ denotes enabling connection weights, and $ae$ denotes the parameter corresponding to an acceptable threshold.
 ![alt text](pictures/s4.png)
 
 ---
-### Table 5: Weight connection of Adaptation Unit Network between layer $(AU^{0-4})$
+### Table S5: Weight connection of Adaptation Unit Network between layer $(AU^{0-4})$
 - (Table S5.1) Connection weight $(W_C)$ between $AU^0$ and $AU^1$ network.
 
 ![alt text](pictures/s5-1.png)
